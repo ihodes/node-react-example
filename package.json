@@ -1,0 +1,11 @@
+{
+  "name": "react-node",
+  "description": "testing server-side react rendering",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "react": "0.11.x",
+    "node-jsx": "0.11.0"
+  }
+}
