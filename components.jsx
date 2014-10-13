@@ -1,9 +1,10 @@
+/** @jsx React.DOM */
 var React = require('react');
 
 
 var Root = React.createClass({
-  render: function() {
-    return React.DOM.div(null, "Hello, world!");
+  render: () => {
+    return <div>Hello, world!</div>;
   }
 });
 

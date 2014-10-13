@@ -1,4 +1,5 @@
-require('node-jsx').install({extension: '.jsx'});
+require('node-jsx').install({extension: '.jsx', harmony: true});
+
 var express = require('express'),
     React = require('react'),
     comp = require('./components');
