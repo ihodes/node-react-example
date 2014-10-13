@@ -6,10 +6,15 @@ var express = require('express'),
 
 
 var app = express();
+app.set('views', './views')
+app.set('view engine', 'html');
+app.engine('html', require('hbs').__express);
+app.use(express.static(__dirname));
 
 
 app.get('/', function(req, res){
-  res.send(React.renderComponentToString(comp.Root()));
+  var Root = comp.Root({date: Date()});
+  res.render('index', {initialView: React.renderComponentToString(Root)});
 });
 
 
